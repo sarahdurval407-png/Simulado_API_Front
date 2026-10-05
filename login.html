@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro de palestrante</title>
+
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+
+<body>
+
+    <div class="pagina">
+
+        <!-- MENU -->
+        <header class="cabecalho">
+
+            <h1>Gerenciador de eventos</h1>
+
+            <nav>
+
+              
+                <a href="login.html">
+                    Cadastro de palestrantes
+                </a>
+
+               
+                <a href="cadastro.html">
+                    Cadastro de evento
+                </a>
+
+               
+                <a href="gerenciador.html">
+                    Gerenciador de evento
+                </a>
+
+            </nav>
+
+        </header>
+
+
+        <!-- CONTEÚDO -->
+        <main class="conteudo">
+
+            <h2>Cadastro palestrante</h2>
+
+            <form id="formPalestrante">
+
+                <div class="campo">
+
+                    <label for="nome">
+                        Nome
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+
+                </div>
+
+
+                <button type="submit">
+                    Cadastrar
+                </button>
+
+            </form>
+
+            <p id="mensagem"></p>
+
+        </main>
+
+    </div>
+
+
+    <script src="cadastro.js"></script>
+
+</body>
+
+</html>

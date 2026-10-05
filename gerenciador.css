@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #111;
+}
+
+
+/* PÁGINA */
+
+.pagina {
+    min-height: 100vh;
+    border: 3px solid #111;
+}
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    height: 81px;
+    background-color: #d9d9d9;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 34px;
+}
+
+
+/* TÍTULO */
+
+.cabecalho h1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* MENU */
+
+.cabecalho nav {
+    display: flex;
+    gap: 38px;
+}
+
+.cabecalho nav a {
+    color: #111;
+    text-decoration: none;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.cabecalho nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* CONTEÚDO */
+
+.conteudo {
+    padding: 38px 35px;
+}
+
+.conteudo h2 {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+
+/* LISTA DE EVENTOS */
+
+.eventos {
+    display: grid;
+
+    grid-template-columns: repeat(3, 270px);
+
+    gap: 25px 19px;
+}
+
+
+/* CARD */
+
+.evento {
+    width: 270px;
+    min-height: 135px;
+
+    background-color: #d9d9d9;
+
+    padding: 14px 11px;
+}
+
+
+/* TEXTOS DO CARD */
+
+.evento p {
+    font-size: 11px;
+
+    margin-bottom: 10px;
+}
+
+.evento strong {
+    font-weight: bold;
+}
+
+
+/* BOTÕES */
+
+.botoes {
+    display: flex;
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.botoes button {
+    width: 89px;
+    height: 24px;
+
+    border: none;
+
+    background-color: #909090;
+
+    color: white;
+
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+.botoes button:hover {
+    background-color: #777;
+}
+
+.botoes button:active {
+    transform: scale(0.97);
+}
+
+
+/* MENSAGEM DE ERRO */
+
+.erro {
+    font-size: 12px;
+    color: #b00000;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 1000px) {
+
+    .eventos {
+        grid-template-columns: repeat(2, 270px);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .cabecalho {
+        height: auto;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 20px;
+
+        padding: 20px;
+    }
+
+
+    .cabecalho nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    .eventos {
+        grid-template-columns: 1fr;
+    }
+
+}
